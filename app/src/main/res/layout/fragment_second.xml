@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="2"
+        android:textStyle="bold"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/callAmotaBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:onClick="onClickCallAmota"
+        android:background="@drawable/button_shape"
+        />
+
+
+    <Button
+        android:id="@+id/anonDonationBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_main"
+        android:onClick="onClickAnonDonation"
+        android:text="תרומה אנונימית"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="onClickLogin"
+        android:text="כניסה"
+        android:textAllCaps="false"
+        android:background="@drawable/button_main"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.5"
+    android:background="@drawable/momandbaby"
+    tools:context="com.example.pc.myapplication.RegisterActivity">
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerPhone"
+        android:layout_alignStart="@+id/registerPhone"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="שם"
+        />
+
+    <EditText
+        android:id="@+id/registerPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerAddress"
+        android:layout_alignStart="@+id/registerAddress"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="פלאפון"
+        android:inputType="phone"
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:id="@+id/registerAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerPassword"
+        android:layout_alignStart="@+id/registerPassword"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="כתובת"
+        />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerPasswordConfirm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="סיסמה"
+        />
+
+    <EditText
+        android:id="@+id/registerPasswordConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="אימות סיסמה"
+        />
+
+    <Button
+        android:id="@+id/registerBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="הירשם"
+        android:onClick="onClickRegisterSuccess"
+        />
+</RelativeLayout>
